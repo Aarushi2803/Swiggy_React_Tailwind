@@ -1,13 +1,12 @@
-import { GrocerGridCard } from "../Utils/Grocery";
-import Grocery from "../Utils/Grocery";
+import { GroceryGridCard } from "../Utils/Grocery";
 
-export default function GroceryCard(){
-
-    <div className=""> 
-        <a href={foodData?.action?.link}> 
-          <img src={"https://media-assets.swiggy.com/swiggy/image/upload/"+GrocerGridCard?.imageId}> 
-          </img> 
-          <h1 className=""> {GrocerGridCard?.action?.text} </h1>
-        </a>
-    </div>
-} 
+export default function GroceryCard({foodData}){ 
+   return( 
+        <div className="flex-none">   
+            <a href={foodData?.action?.link}>  
+            <img className="w-40 h-50 object-cover" src={"https://media-assets.swiggy.com/swiggy/image/upload/"+foodData?.imageId}/> 
+            <h1 className="text-center font-bold"> {foodData?.action?.text} </h1>
+            </a> 
+        </div> 
+   )
+}  
