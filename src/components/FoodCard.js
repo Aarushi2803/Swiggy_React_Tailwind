@@ -4,9 +4,9 @@ export default function FoodCard({FoodData}){
  
     return(
         <>
-         <img className="w-40 h-50 object-cover mt-20" src="https://media-assets.swiggy.com/swiggy/image/upload/ + FoodData?.imageId" ></img>
+         <a href={FoodData?.action?.link}>
+           <img className="w-40 h-50 object-cover" src={"https://media-assets.swiggy.com/swiggy/image/upload/"+FoodData?.imageId}></img> 
+         </a>
         </> 
     )
 }
-
-// "https://media-assets.swiggy.com/swiggy/image/upload/
