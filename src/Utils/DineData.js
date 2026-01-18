@@ -1,4 +1,5 @@
-export const dineoutRestaurants = [{
+const dineoutRestaurants = [
+    {
         "info": {
             "id": "816534",
             "name": "Kohu",
@@ -2118,3 +2119,5 @@ export const dineoutRestaurants = [{
             "type": "DEEPLINK"
         }
 }]
+
+export default dineoutRestaurants;
